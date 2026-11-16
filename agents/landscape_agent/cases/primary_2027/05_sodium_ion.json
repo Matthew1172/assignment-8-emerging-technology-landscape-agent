@@ -1,0 +1,14 @@
+{
+  "emerging_technology": "Sodium-ion battery systems for stationary storage",
+  "intended_application": "Assess a pilot behind-the-meter storage system at a refrigerated distribution warehouse.",
+  "organization": "Hypothetical cold-chain logistics company",
+  "industry_sector": "Warehousing and energy",
+  "business_need": "Manage peak demand and improve resilience to short interruptions.",
+  "users_stakeholders": "Facility operators, fire authority, insurer, energy manager",
+  "adoption_posture": "Moderate fast follower",
+  "capabilities_constraints": "Assume the site has metering and room for a pilot; installation quotations, warranties and site safety review are unavailable.",
+  "risk_consequence_context": "Thermal incidents, insufficient runtime or warranty exclusions could disrupt refrigerated goods and safety.",
+  "management_question": "Would a 2027 pilot improve the whole-life value and risk profile versus lithium-ion storage?",
+  "time_horizon": "2027 capital planning; initial pilot only",
+  "additional_context": "Hypothetical teaching case created 2026-11-16 for a prospective 2027 decision; organizational details and the proposed monitoring trigger are assumptions, not observations or forecasts. Conventional baseline: Lithium iron phosphate storage and conventional backup generation. Complement or dependency: Battery management, approved installation and fire protection. Proposed monitoring trigger and owner: Facilities lead reviews quotations and testing quarterly; reconsider if independent site-relevant lifetime cost, safety evidence and warranty terms meet pre-agreed requirements. Hype-sensitive assertion to test, not a fact: Sodium-ion is automatically cheaper and safer than every lithium-ion system. Source seed: DOE, Energy Storage Supply Chain Report, 2022 report hosted 2024, accessed 2026-11-16: https://www.energy.gov/sites/default/files/2024-12/Energy%2520Storage%2520Supply%2520Chain%2520Report%2520-%2520final%5B1%5D.pdf. Scope: The report discusses sodium-ion technology; it does not establish current pricing, installation approval or performance at this warehouse. This single source is a starting point, not adequate corroboration or a 2027 market assessment. Refresh evidence at decision time and seek multiple independent dated sources; do not fabricate 2027 developments, adoption, costs, regulatory status, results or a chasm classification."
+}

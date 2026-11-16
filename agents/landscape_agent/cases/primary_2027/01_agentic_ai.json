@@ -1,0 +1,14 @@
+{
+  "emerging_technology": "Tool-using AI agents with constrained software actions",
+  "intended_application": "Draft and reconcile supplier-invoice exceptions in a sandbox; a human approves every payment and supplier change.",
+  "organization": "Hypothetical regional food distributor",
+  "industry_sector": "Wholesale distribution",
+  "business_need": "Shorten exception queues without increasing payment errors.",
+  "users_stakeholders": "Accounts-payable staff, suppliers, security, finance controller",
+  "adoption_posture": "Moderate fast follower",
+  "capabilities_constraints": "Assume a test ERP and anonymized historical invoices; no agent integration or safety evaluation exists.",
+  "risk_consequence_context": "A fabricated invoice or prompt injection could lead to a wrong payment or exposure of supplier data.",
+  "management_question": "Should management authorize a sandbox evaluation against rules-based exception routing during 2027?",
+  "time_horizon": "2027 budget decision; three-month sandbox if authorized",
+  "additional_context": "Hypothetical teaching case created 2026-11-16 for a prospective 2027 decision; organizational details and the proposed monitoring trigger are assumptions, not observations or forecasts. Conventional baseline: Existing rules and human invoice review. Complement or dependency: Identity-bound tools and audit logging. Proposed monitoring trigger and owner: Controller reviews monthly; revisit if the agent makes any unauthorized write in testing or fails pre-agreed accuracy and labor thresholds. Hype-sensitive assertion to test, not a fact: An agent can independently handle all invoice exceptions reliably. Source seed: NIST AI Agent Standards Initiative, 2026-02-17, accessed 2026-11-16: https://www.nist.gov/news-events/news/2026/02/announcing-ai-agent-standards-initiative-interoperable-and-secure. Scope: NIST describes an initiative for agent interoperability, security and identity; it does not validate this proposed application. This single source is a starting point, not adequate corroboration or a 2027 market assessment. Refresh evidence at decision time and seek multiple independent dated sources; do not fabricate 2027 developments, adoption, costs, regulatory status, results or a chasm classification."
+}

@@ -1,0 +1,14 @@
+{
+  "emerging_technology": "Error-corrected superconducting quantum computing",
+  "intended_application": "Evaluate whether quantum-assisted portfolio optimization merits a small research partnership using non-sensitive synthetic data.",
+  "organization": "Hypothetical mid-sized asset manager",
+  "industry_sector": "Financial services",
+  "business_need": "Assess whether exploratory research could eventually improve optimization while avoiding premature procurement.",
+  "users_stakeholders": "Quantitative researchers, investment committee, risk, clients",
+  "adoption_posture": "Cautious fast follower",
+  "capabilities_constraints": "Assume two quantitative analysts and access to classical optimizers; no quantum engineering team and no verified workload advantage.",
+  "risk_consequence_context": "Misleading benchmarks or leaked sensitive inputs could waste funds or distort investment decisions.",
+  "management_question": "In 2027, should the firm fund a limited research benchmark or continue monitoring?",
+  "time_horizon": "2027 research allocation; annual reassessment",
+  "additional_context": "Hypothetical teaching case created 2026-11-16 for a prospective 2027 decision; organizational details and the proposed monitoring trigger are assumptions, not observations or forecasts. Conventional baseline: Classical mixed-integer and heuristic optimization. Complement or dependency: Classical verification and error-correction infrastructure. Proposed monitoring trigger and owner: Research lead checks quarterly for independently reproducible end-to-end advantage on comparable problems and full cost; reconsider only when a benchmark beats the agreed classical baseline. Hype-sensitive assertion to test, not a fact: Below-threshold error correction means commercial portfolio optimization is already superior. Source seed: Google Quantum AI and collaborators, Nature, 2024-12-09, accessed 2026-11-16: https://www.nature.com/articles/s41586-024-08449-y. Scope: Reports a particular below-threshold quantum-memory experiment; it is not evidence of investment-task advantage. This single source is a starting point, not adequate corroboration or a 2027 market assessment. Refresh evidence at decision time and seek multiple independent dated sources; do not fabricate 2027 developments, adoption, costs, regulatory status, results or a chasm classification."
+}
