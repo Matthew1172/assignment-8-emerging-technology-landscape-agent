@@ -1,0 +1,14 @@
+{
+  "emerging_technology": "Synchronized digital twins of a manufacturing production line",
+  "intended_application": "Read-only twin of one packaging line to support maintenance planning; supervisors retain equipment decisions.",
+  "organization": "Hypothetical mid-sized food packaging manufacturer",
+  "industry_sector": "Food packaging manufacturing",
+  "business_need": "Reduce avoidable line stoppages without automatic equipment control.",
+  "users_stakeholders": "Maintenance engineers, operators, line supervisors and plant manager",
+  "adoption_posture": "Moderate fast follower",
+  "capabilities_constraints": "Sensor history, pilot budget and a maintenance engineer are assumed available; no model fit validation or named post-pilot model owner.",
+  "risk_consequence_context": "Missed faults and unnecessary shutdowns affect production and can create safety concerns; no automatic control.",
+  "management_question": "Which landscape developments matter for a pilot decision and what should be monitored?",
+  "time_horizon": "Decide whether to pilot within 6–12 months",
+  "additional_context": "Hypothetical case; organizational details are assumptions. Analysis date 2026-11-16. Evidence packet checked 2026-11-16: NIST digital twins program updated 2026-07-20 https://www.nist.gov/programs-projects/digital-twins-advanced-manufacturing (synchronization, interoperability and validation challenges); ISO 23247-1:2021 https://www.iso.org/standard/75066.html (published framework overview, not certification); DOE O&M Best Practices release 3.0, 2010 https://www.energy.gov/sites/default/files/2020/04/f74/omguide_complete_w-eo-disclaimer.pdf (condition-based maintenance, generalized facilities guide); Siemens product page https://resources.sw.siemens.com/en-US/fact-sheet-simcenter-executable-digital-twin/ (undated vendor claims, not independent performance proof). These sources do not establish adoption rates, a specific plant's benefits, prices, vendor ranking or current regulatory obligations."
+}

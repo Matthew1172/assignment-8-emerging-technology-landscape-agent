@@ -1,0 +1,14 @@
+{
+  "emerging_technology": "Synchronized digital twins of a manufacturing production line",
+  "intended_application": "Use a synchronized twin of a new production line for offline commissioning and layout scenario comparison before installation; no live equipment control.",
+  "organization": "Hypothetical large manufacturer with an established simulation engineering team and funding",
+  "industry_sector": "Discrete manufacturing",
+  "business_need": "Identify bottlenecks and commissioning issues before installation.",
+  "users_stakeholders": "Simulation engineers, integrators, operators and plant management",
+  "adoption_posture": "Leading edge",
+  "capabilities_constraints": "Assume simulation engineers and CAD data exist; vendor interoperability and as-built accuracy remain unverified.",
+  "risk_consequence_context": "Bad simulation can delay commissioning and cause costly redesign; real equipment remains subject to independent safety review.",
+  "management_question": "Which landscape developments affect a pre-installation simulation and integration decision?",
+  "time_horizon": "Select approach for an installation in 12–18 months",
+  "additional_context": "Hypothetical case; organizational details are assumptions. Analysis date 2026-11-16. Evidence packet checked 2026-11-16: NIST digital twins program updated 2026-07-20 https://www.nist.gov/programs-projects/digital-twins-advanced-manufacturing (synchronization, interoperability and validation challenges); ISO 23247-1:2021 https://www.iso.org/standard/75066.html (published framework overview, not certification); DOE O&M Best Practices release 3.0, 2010 https://www.energy.gov/sites/default/files/2020/04/f74/omguide_complete_w-eo-disclaimer.pdf (condition-based maintenance, generalized facilities guide); Siemens product page https://resources.sw.siemens.com/en-US/fact-sheet-simcenter-executable-digital-twin/ (undated vendor claims, not independent performance proof). These sources do not establish adoption rates, a specific plant's benefits, prices, vendor ranking or current regulatory obligations."
+}

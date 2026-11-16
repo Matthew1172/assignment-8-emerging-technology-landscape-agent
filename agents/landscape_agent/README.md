@@ -1,0 +1,3 @@
+# Emerging Technology Landscape Agent
+
+Start with `records/agent_record.md`, `records/sources.md`, and `records/test_comparison.md`. The `cases/` and `responses/` folders preserve the primary and contrast analysis; `specialist_instructions.md` contains the reusable specialist. All organizational facts are hypothetical. Use the frozen `tools/build_prompt.py` to make a packet and `tools/validate_response.py` to check saved responses. Run `python3 tools/check_frozen_core.py` from the repository root. The course workflow uses ChatGPT interactively and does not require an API key; the recorded analyses were drafted by Codex in this session and are not independent ChatGPT UI runs.
