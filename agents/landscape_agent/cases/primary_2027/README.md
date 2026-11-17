@@ -1,4 +1,4 @@
-# Ten prospective primary cases for 2027
+# Prospective primary cases for 2027
 
 These independent cases are for the Landscape Agent; they do not replace the existing assignment primary and contrast cases. Each is a hypothetical organization and a 2027 decision scenario drafted on November 16, 2026. No 2027 development or outcome is represented as known. Their proposed monitoring thresholds are decision-design prompts, not observed results.
 
@@ -14,6 +14,7 @@ These independent cases are for the Landscape Agent; they do not replace the exi
 | [08](08_post_quantum.json) | Post-quantum cryptography | Utility-meter laboratory migration |
 | [09](09_direct_air_capture.json) | Direct air capture and storage | Conditional carbon-removal procurement |
 | [10](10_confidential_computing.json) | Confidential computing | Synthetic-data analytics pilot |
+| [11](11_edge_computing_laptops.json) | Edge AI on laptops | Offline field-service documentation |
 
 The set targets emerging applications and implementation frontiers; it does not assert that each underlying technology is universally bleeding edge. In particular, published post-quantum standards and existing gene-therapy approvals should not be mistaken for proof that the proposed deployment is mature or ready. These are inputs, not completed agent runs or contrast tests.
 
