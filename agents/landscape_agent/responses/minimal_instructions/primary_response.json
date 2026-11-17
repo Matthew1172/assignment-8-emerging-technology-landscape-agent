@@ -1,0 +1,91 @@
+{
+  "agent": {
+    "name": "Emerging Technology Landscape Agent",
+    "specialty": "Technology landscape and monitoring",
+    "version": "0.2.0"
+  },
+  "analytical_question": "For a hypothetical field-services company deciding on its 2027 laptop replacement cycle, how mature and relevant are NPU-accelerated local transcription and summarization, what alternatives and dependencies matter, and what evidence would justify a bounded pilot?",
+  "general_et_finding": "NPU-equipped PCs and supporting local inference ecosystems are expanding, while useful acceleration depends on the model, application, runtime, driver, hardware and workload. Gartner revised its 2025 AI-PC shipment forecast downward from 43% to 31% of all PCs between September 2024 and August 2025; both were forecasts, not proof of use. Omdia reported in October 2026 that hardware is becoming mainstream while enterprises are still evaluating the local-inference business case. Under Rogers, diffusion of NPU-capable hardware appears further along than diffusion of demonstrated local AI workflows; Moore’s chasm is a useful question about repeatable, supported use at scale, not a validated universal stage. Evidence does not support assigning the combined technology a precise diffusion stage.",
+  "application_finding": "Offline speech transcription followed by local summarization is technically plausible, but the two tasks require separately compatible models and software, and an NPU does not establish that either task actually uses it or beats a CPU or GPU. No verified representative field-services deployment or independent benchmark for the exact combined workflow was identified. The application’s diffusion and whether it has crossed Moore’s chasm remain unestablished. Compare existing laptops and human notes, approved connected cloud tools, and CPU/GPU local inference with an NPU-enabled workflow; mixed local/cloud processing is another option when connected. Microsoft Windows ML and ONNX Runtime are examples of a software ecosystem, while Intel, Qualcomm, AMD and Apple silicon are examples of platform suppliers, not interchangeable compatibility guarantees.",
+  "organization_specific_finding": "For this hypothetical moderate fast follower, the offline need and 2027 refresh make a small, reversible evaluation potentially relevant, but there is no organization-specific evidence of fit or net value. Field noise, technical vocabulary, safety-critical omissions, battery life, device security, app compatibility and IT support are decisive. Human review is required but does not guarantee errors will be caught. There is insufficient evidence to characterize adoption in equipment maintenance and field services or to commit the fleet to NPU-specific specifications.",
+  "evidence": [
+    {
+      "claim": "Gartner forecast AI PCs would account for 43% of 2025 shipments in September 2024, then revised that to 31% in August 2025. Its AI-PC definition included an embedded NPU.",
+      "source_or_reference": "Gartner, September 2024 forecast, https://www.gartner.com/en/newsroom/press-releases/2024-09-25-gartner-forecasts-worldwide-shipments-of-artificial-intelligence-pcs-to-account-for-43-percent-of-all-pcs-in-2025 ; Gartner, August 2025 forecast, https://www.gartner.com/en/newsroom/press-releases/2025-08-28-gartner-says-artificial-intelligence-pcs-will-represent-31-percent-of-worldwide-pc-market-by-the-end-of-2025",
+      "date_or_recency": "2024-09-25 and 2025-08-28",
+      "evidence_type": "Industry analyst successive forecasts",
+      "notes": "Forecasts describe shipments of an NPU-equipped category, not realized deployments, workload use or productivity. Revision demonstrates forecast uncertainty."
+    },
+    {
+      "claim": "Omdia describes AI-capable PC hardware as becoming mainstream while the business case for enterprise local inference remains unsettled; its August 2026 survey found 9% of workers surveyed named AI features as their main reason for the last PC purchase.",
+      "source_or_reference": "Omdia, As enterprise AI spend continues to rise, the PC ecosystem must define the on-device case for hybrid AI, https://omdia.tech.informa.com/blogs/2026/oct/as-enterprise-ai-spend-continues-to-rise-the-pc-ecosystem-must-define-the-on-device-case-for-hybrid-ai",
+      "date_or_recency": "October 2026; survey August 2026",
+      "evidence_type": "Industry analyst observation and consumer survey",
+      "notes": "Survey is about PC users who use their PC for work, not field-service businesses; reported reasons are not direct evidence of local application use."
+    },
+    {
+      "claim": "In an IDC survey of 519 PC purchasing decision-makers in February 2026, 27% reported AI-PC deployment and 33% piloting.",
+      "source_or_reference": "IDC survey report reproduced by GamesBeat, https://gamesbeat.com/60-of-enterprises-are-deploying-ai-pcs-idc-report/",
+      "date_or_recency": "Survey February 2026",
+      "evidence_type": "Industry survey; reported by secondary source",
+      "notes": "The sample excluded respondents with no interest in future AI-PC deployment; the proportions cannot be generalized to all enterprises and do not measure NPU use or this application. The report is industry-sponsored."
+    },
+    {
+      "claim": "On one laptop, researchers measured lower query latency and system energy for a specialized NPU retrieval-augmented generation pipeline than the tested CPU and GPU baselines.",
+      "source_or_reference": "Energy-Efficient On-Device RAG on a Mobile NPU, https://arxiv.org/abs/2606.11257",
+      "date_or_recency": "June 2026",
+      "evidence_type": "Research preprint; measured benchmark",
+      "notes": "One Snapdragon X Elite laptop, a 120-query Wikipedia-passage benchmark and a tailored stack; not a transcription or field-service summarization evaluation, nor a universal laptop or energy result. Peer review not established."
+    },
+    {
+      "claim": "A separate study found NPU offloading could be slower or consume more energy than CPU execution for portions of mobile LLM inference on its tested platform.",
+      "source_or_reference": "When NPUs Are Not Always Faster: A Stage-Level Analysis of Mobile LLM Inference, https://arxiv.org/abs/2605.27435",
+      "date_or_recency": "2026-05-22",
+      "evidence_type": "Research preprint; measured benchmark",
+      "notes": "The tested Snapdragon 8 Gen 3 mobile SoC is not a field laptop; its disagreement with the laptop RAG study illustrates workload and platform dependence, not a direct apples-to-apples comparison. Peer review not established."
+    },
+    {
+      "claim": "Windows ML uses ONNX Runtime and vendor-specific execution providers to support local hardware acceleration; Microsoft describes tools for profiling NPU operations.",
+      "source_or_reference": "Microsoft, Copilot+ PCs developer guide, https://learn.microsoft.com/en-us/windows/ai/npu-devices",
+      "date_or_recency": "Accessed for case as of 2026-11-16; living documentation",
+      "evidence_type": "Vendor technical documentation",
+      "notes": "Documents development capabilities, not proof that a proposed application runs fully on the NPU, stays offline end to end, or delivers fleet value."
+    },
+    {
+      "claim": "Microsoft describes local model inference with Foundry Local but notes initial model and execution-provider downloads and optional diagnostics can use a network.",
+      "source_or_reference": "Microsoft, What is Foundry Local?, https://learn.microsoft.com/en-us/azure/foundry-local/what-is-foundry-local",
+      "date_or_recency": "Living documentation; access checked for case as of 2026-11-16",
+      "evidence_type": "Vendor technical documentation",
+      "notes": "A runtime example, not verification of the full application or its behavior in the company environment; version and app integrations require testing."
+    },
+    {
+      "claim": "NIST identifies generative AI confabulation, privacy, security and human-AI interaction as risk areas.",
+      "source_or_reference": "NIST AI 600-1, Generative Artificial Intelligence Profile, https://doi.org/10.6028/NIST.AI.600-1",
+      "date_or_recency": "July 2024",
+      "evidence_type": "Government risk-management guidance",
+      "notes": "Voluntary guidance, not a jurisdiction-specific legal determination; it does not validate the proposed application."
+    }
+  ],
+  "contrary_evidence_or_limitations": [
+    "NPU shipment estimates and general AI-PC surveys do not establish active local transcription, summarization, value or adoption in field services; vendor marketing is not independent proof.",
+    "No verified current independent head-to-head benchmark of the exact local speech-to-summary workflow on this company’s laptops, or verified field-service deployment rate, was found. The cited research results use different workloads and hardware.",
+    "A transcription with low average word error can still miss a critical serial number, warning or negation; summarization may omit or invent details, and human reviewers may miss these failures.",
+    "Up-front downloads, updates, telemetry, synchronization or application fallback can require connectivity or transfer data. On-device processing does not itself prevent loss from a stolen device.",
+    "Fleet specifications, supported models, software availability, licensing, prices, actual customer consent requirements and representative pilot data are unknown. The case and proposed triggers are hypothetical."
+  ],
+  "confidence_and_uncertainty": "Moderate confidence that NPU-capable hardware and software options are growing and that performance and privacy are conditional; low confidence in measured value, exact diffusion stage, field-service adoption and 2027 economics for this company. Analyst forecasts and preprints are not confirmed outcomes; no 2027 products or prices are assumed.",
+  "value_opportunity_implication": "If tested successfully, offline capture and drafting could reduce note-rewriting time and reduce connectivity interruptions. Any privacy benefit comes from the verified complete local workflow and controls, not the NPU alone. Evaluate incremental laptop and memory costs, software licensing, administration, training and support against measured time savings and displaced cloud use.",
+  "risk_governance_implication": "Use synthetic or consented material, minimize retention, encrypt managed devices and use access controls, remote management and patch controls. Verify downloads, updates, diagnostics, sync and fallback through network observation and configuration review; pre-stage approved components. Require technicians to check source material against output, especially safety details, numbers and negations, and preserve a clear record of human responsibility. Review applicable privacy, customer-record, retention and security obligations for the actual jurisdictions and contracts; NIST AI RMF is voluntary guidance, not legal compliance.",
+  "recommendation_management_implication": "Include the option for NPU-capable configurations in market research and prepare a small, time-bounded pilot, subject to compatible software and basic security controls, rather than committing the replacement fleet now. Before testing, management should set acceptable thresholds and sample design with technicians, safety, security and IT. Compare human notes and approved cloud use when connected, existing-laptop CPU/GPU local tools where feasible, and NPU-capable candidates on the same representative material. Measure reviewed end-to-end task time and quality, critical-detail omissions, transcription errors, offline behavior, latency, battery, user burden, support and total incremental cost; instrument actual accelerator use. Management can evaluate the results against its thresholds at the procurement decision.",
+  "change_monitoring_triggers": [
+    "IT lead reviews quarterly and at procurement milestones through the 2027 decision, with security, procurement and field-management input; compare vendor documentation and independent evidence across refreshes.",
+    "Run a bounded representative pilot once supported devices, software and pre-agreed acceptance thresholds exist; reassess fleet inclusion when reviewed accuracy, safety-critical omission rate, end-to-end time, battery, offline availability, support burden and incremental total cost meet those thresholds against baselines.",
+    "Reassess immediately if network inspection shows unexpected customer-data transfer or cloud fallback, an unacceptable safety-critical omission occurs, or a material security vulnerability or loss event changes the risk profile.",
+    "At each quarterly review and before purchase, reassess if model, application, driver or operating-system support changes materially, if a relevant independent benchmark or field-services deployment becomes available, or if device, memory, software or support pricing materially changes."
+  ],
+  "abstention_or_more_information_needed": [
+    "Do not determine a fleet-wide purchase, precise Rogers adopter category, or whether the field-service application has crossed Moore’s chasm without stronger evidence.",
+    "Obtain fleet inventory and architecture, representative equipment and recording conditions, app/model and NPU compatibility, device-management and security capabilities, privacy/retention obligations, vendor quotes and licensing, and expected replacement quantities.",
+    "Agree on numerical acceptance thresholds, critical-detail definitions, representative consented or synthetic datasets, scoring and sample size before the pilot; document how human review and baseline workflows will be measured."
+  ]
+}

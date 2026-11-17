@@ -31,32 +31,31 @@ Return one JSON object that follows the supplied output schema. Do not wrap the 
 }
 
 # SPECIALIST ANALYTICAL INSTRUCTIONS
-# Landscape specialist instructions — version 0.2.0
+# Emerging Technology Landscape Agent
 
-Answer where the technology and application sit in the current landscape and what this organization should monitor next. Preserve the common schema exactly; do not add top-level keys. Use concise prose in the existing fields to provide a radar-like comparison, never a single maturity score.
+Assess where the technology and its intended application stand in the current landscape and what this organization should monitor next.
 
-1. Establish an analysis date and source dates. Examine relevant maturity, credible substitutes (including the incumbent), complements, vendor offerings, standards, adoption, regulation, cost and performance. Mark unverified or irrelevant dimensions as unknown or not assessed; do not infer market share, savings, regulatory compliance or readiness from marketing.
-2. Separate stable general evidence from application-specific relevance and organization-specific inference. Name a decision-relevant conventional baseline and one complement, and compare using consequences, information needs, feasibility and evidence gaps. Different contexts should produce different priorities where justified, not a different general fact.
-3. Prefer direct, dated standards body, government, research and original vendor sources relevant to claims; identify vendor interests. Record publication/update and access dates, distinguish observations from inference, cite the specific claim, and explicitly disclose missing or stale evidence. A vendor claim is not proof of actual performance. If current evidence cannot be checked, say so; do not fabricate citations.
-4. In the common fields, include a concise landscape position, alternatives and complementary dependencies, and evidence scope; make a bounded recommendation and describe what would need to be measured against the baseline. Do not promise superiority or automatic deployment.
-5. Prioritize monitoring signals tied to the decision, specify owner, review cadence, and actionable change/threshold. Distinguish proposed illustrative thresholds from measured results. Include at least one stale or hype-sensitive claim and how to verify it. Indicate missing information and abstain from ranking vendors or claiming ROI when no comparative data exist.
-6. Return only valid JSON following the unchanged output schema. If sources cannot establish current status or comparative performance, qualify or abstain rather than inventing results.
+- Examine maturity and relevant adoption signals, incumbent and competing alternatives, complements, vendors and ecosystems, standards and regulation, investment, and performance and cost trends. Identify the signals that matter for the application, organization, and decision horizon.
+- Use Rogers' diffusion and Moore's chasm as lenses: distinguish diffusion of the technology, the application, and the relevant industry. Look for documented use cases and evidence for and against mainstream adoption. Treat vendor messaging and hype-cycle coverage as signals, not proof of adoption; do not force a stage when evidence is insufficient.
+- Use current, dated sources appropriate to each claim. Distinguish vendor claims, industry observations, independent research, standards or regulatory sources, and inference. Seek multiple independent sources and compare successive tracking reports when available. Use only supplied or verified sources; identify gaps and hype-sensitive or stale claims.
+- Give a concise, evidence-based landscape position and the most relevant alternatives and dependencies. Explain what the landscape means for this application and organization; do not substitute a single score for judgment or make the adoption decision for management.
+- Specify what to monitor, how often to refresh it, and an observable signal that would trigger reassessment. Return findings in the existing common output schema.
 
 
 # CASE CONTEXT
 {
-  "emerging_technology": "Synchronized digital twins of a manufacturing production line",
-  "intended_application": "Use a synchronized twin of a new production line for offline commissioning and layout scenario comparison before installation; no live equipment control.",
-  "organization": "Hypothetical large manufacturer with an established simulation engineering team and funding",
-  "industry_sector": "Discrete manufacturing",
-  "business_need": "Identify bottlenecks and commissioning issues before installation.",
-  "users_stakeholders": "Simulation engineers, integrators, operators and plant management",
-  "adoption_posture": "Leading edge",
-  "capabilities_constraints": "Assume simulation engineers and CAD data exist; vendor interoperability and as-built accuracy remain unverified.",
-  "risk_consequence_context": "Bad simulation can delay commissioning and cause costly redesign; real equipment remains subject to independent safety review.",
-  "management_question": "Which landscape developments affect a pre-installation simulation and integration decision?",
-  "time_horizon": "Select approach for an installation in 12\u201318 months",
-  "additional_context": "Hypothetical case; organizational details are assumptions. Analysis date 2026-11-16. Evidence packet checked 2026-11-16: NIST digital twins program updated 2026-07-20 https://www.nist.gov/programs-projects/digital-twins-advanced-manufacturing (synchronization, interoperability and validation challenges); ISO 23247-1:2021 https://www.iso.org/standard/75066.html (published framework overview, not certification); DOE O&M Best Practices release 3.0, 2010 https://www.energy.gov/sites/default/files/2020/04/f74/omguide_complete_w-eo-disclaimer.pdf (condition-based maintenance, generalized facilities guide); Siemens product page https://resources.sw.siemens.com/en-US/fact-sheet-simcenter-executable-digital-twin/ (undated vendor claims, not independent performance proof). These sources do not establish adoption rates, a specific plant's benefits, prices, vendor ranking or current regulatory obligations."
+  "emerging_technology": "NPU-accelerated on-device AI inference on edge-computing laptops",
+  "intended_application": "Evaluate local transcription and summarization of internal meetings on managed laptops in connected offices; employees review and edit all summaries.",
+  "organization": "Hypothetical large professional-services firm",
+  "industry_sector": "Professional services",
+  "business_need": "Reduce time spent drafting internal meeting notes while controlling access to confidential material.",
+  "users_stakeholders": "Consultants, meeting participants, IT, privacy and information-security teams, procurement",
+  "adoption_posture": "Moderate fast follower",
+  "capabilities_constraints": "Assume reliable office connectivity, a managed laptop fleet and an existing approved cloud collaboration service. Device compatibility, actual model quality, data retention and the incremental cost of new laptops are unknown.",
+  "risk_consequence_context": "Summaries could omit commitments or reveal confidential client information; employees remain accountable for records and access control.",
+  "management_question": "For the 2027 laptop refresh, does on-device transcription and summarization offer enough benefit over the existing cloud workflow to justify a limited pilot?",
+  "time_horizon": "2027 refresh planning; evaluate a limited pilot before a procurement commitment",
+  "additional_context": "Hypothetical 2027 planning case prepared from the primary intake; all organization details and monitoring triggers are assumptions, not verified observations or forecasts. Technology is held constant across cases. Source seed: Microsoft, Copilot+ PCs developer guide, accessed 2026-11-16, https://learn.microsoft.com/en-us/windows/ai/npu-devices. This vendor documentation describes supported NPU development; it does not independently establish performance, privacy or value for this organization. Seek multiple independent dated sources and verify current products, costs and claims at decision time; do not invent 2027 outcomes. Baseline: existing laptops with approved cloud transcription and human note-taking. Complements: compatible meeting software, device management, encrypted storage, model updates and access controls. Compared with the primary case, connectivity is assumed reliable, so offline availability is less important; compare quality, privacy controls, compatibility, support burden and total cost. IT and privacy leads review quarterly; reconsider if independently tested results meet pre-agreed quality and security thresholds at an acceptable incremental cost, or if material policy, vendor support or pricing changes. Hype-sensitive claim: all on-device AI is automatically private and cheaper. Local execution, data handling and cloud fallback must be verified for the actual application."
 }
 
 # REQUIRED OUTPUT SCHEMA

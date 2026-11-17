@@ -1,0 +1,69 @@
+{
+  "agent": {
+    "name": "Emerging Technology Landscape Agent",
+    "specialty": "Technology landscape and monitoring",
+    "version": "0.2.0"
+  },
+  "analytical_question": "For the 2027 laptop refresh, does on-device transcription and summarization offer enough incremental benefit over the approved cloud workflow and human note-taking to justify a limited pilot?",
+  "general_et_finding": "NPU-equipped laptops and software ecosystems exist across several PC and chip vendors, but an NPU does not ensure a particular speech or summarization model uses it, or offers better quality, privacy or cost. As a Rogers diffusion lens, hardware shipment estimates suggest broadening diffusion, but shipments measure supply rather than active use or outcomes. Gartner revised its 2025 forecast downward from 43% to 31%, showing forecast uncertainty. The location of Moore’s chasm cannot be established for local meeting workflows from hardware data. ONNX Runtime and hardware-specific execution providers are ecosystem dependencies; local CPU and GPU inference are alternatives.",
+  "application_finding": "Cloud meeting transcription and recap are documented competing workflows; local CPU/GPU inference and human note-taking are further comparators. Microsoft documents NPU development and a cloud recap, but neither demonstrates a suitable integrated, NPU-accelerated local transcription-and-summary product. There is insufficient evidence to assign a diffusion stage or claim this application crossed the chasm. Compare quality on realistic accents, terminology, acoustics and speaker attribution, including missing commitments; inspect cloud fallback, telemetry and storage across the full path.",
+  "organization_specific_finding": "Reliable connectivity reduces offline value for this hypothetical professional-services firm; confidentiality, access controls, record obligations, quality, compatibility, support and incremental refresh cost dominate. Its cloud service is unspecified, so Teams is an illustrative alternative, not an assertion about the firm. Industry adoption of this exact workflow and fleet compatibility are unverified; neither an industry diffusion stage nor firm-specific benefit is supportable yet.",
+  "evidence": [
+    {
+      "claim": "Copilot+ PC guidance describes 40+ TOPS NPUs, devices from multiple manufacturers, and ONNX Runtime access; software must target the NPU.",
+      "source_or_reference": "Microsoft, Copilot+ PCs developer guide, https://learn.microsoft.com/en-us/windows/ai/npu-devices",
+      "date_or_recency": "2025-02-10; accessed 2026-11-16",
+      "evidence_type": "Vendor technical documentation",
+      "notes": "Examples include Qualcomm, AMD and Intel platforms; capability does not prove adoption or end-to-end performance."
+    },
+    {
+      "claim": "Gartner forecast 2025 AI-PC shipments at 43% of PCs in September 2024, then forecast 31% in August 2025, reporting 15.6% for 2024 in the later report.",
+      "source_or_reference": "Gartner, September 2024 and August 2025 forecasts, https://www.gartner.com/en/newsroom/press-releases/2024-09-25-gartner-forecasts-worldwide-shipments-of-artificial-intelligence-pcs-to-account-for-43-percent-of-all-pcs-in-2025 and https://www.gartner.com/en/newsroom/press-releases/2025-08-28-gartner-says-artificial-intelligence-pcs-will-represent-31-percent-of-worldwide-pc-market-by-the-end-of-2025",
+      "date_or_recency": "2024-09-25 and 2025-08-28",
+      "evidence_type": "Industry analyst estimates and forecasts",
+      "notes": "Gartner defines AI PCs by embedded NPUs. Forecasts are not verified 2025 actuals and do not measure meeting application use; check later reports at procurement."
+    },
+    {
+      "claim": "Teams offers cloud intelligent recap with generated meeting notes and tasks, subject to licensing and policy; Microsoft describes storage for transcripts and notes.",
+      "source_or_reference": "Microsoft, Teams intelligent recap and privacy, https://learn.microsoft.com/en-us/microsoftteams/intelligent-recap-calls-meetings and https://learn.microsoft.com/en-us/microsoftteams/privacy/intelligent-recap",
+      "date_or_recency": "First page accessed 2026-11-16; privacy page last updated 2023-11-08",
+      "evidence_type": "Vendor product and privacy documentation",
+      "notes": "A documented competing use case, not independent proof of quality or savings, or identification of this firm’s approved service; configurations vary."
+    },
+    {
+      "claim": "Research on English meeting summarization finds automatic metrics can mask errors including omissions and hallucinations.",
+      "source_or_reference": "Kirstein et al., What’s under the hood: Investigating Automatic Metrics on Meeting Summarization, https://arxiv.org/abs/2404.11124",
+      "date_or_recency": "2024-04-17",
+      "evidence_type": "Independent academic research, preprint",
+      "notes": "QMSum and tested models do not establish performance of current on-device products. Supports human error review alongside metrics."
+    },
+    {
+      "claim": "NIST describes generative AI confabulation and automation bias as risks and provides voluntary risk-management guidance.",
+      "source_or_reference": "NIST AI 600-1, Generative AI Profile, https://doi.org/10.6028/NIST.AI.600-1",
+      "date_or_recency": "2024-07-26",
+      "evidence_type": "Government standards and guidance",
+      "notes": "Guidance is neither a product certification nor a jurisdiction-specific legal determination."
+    }
+  ],
+  "contrary_evidence_or_limitations": [
+    "Hardware shipments and vendor marketing do not establish sustained adoption or value of this specific workflow; recent independent adoption and investment data for it were not established.",
+    "No comparable independent benchmark, verified application shortlist, firm fleet inventory, retention map, negotiated prices or 2027 outcomes are available. TOPS alone is not a meeting-quality, latency or energy benchmark.",
+    "Cloud can have managed access and retention controls; local processing can expose data through synced files, logs, model updates or fallback. Neither privacy nor lower cost follows automatically from on-device inference.",
+    "NIST guidance is voluntary; applicable recording, employment, privacy and records requirements depend on jurisdictions and circumstances and need legal review."
+  ],
+  "confidence_and_uncertainty": "Moderate confidence that multiple NPU platforms exist and a cloud alternative is documented; low confidence on application maturity, professional-services adoption, comparative quality, cost and privacy. Hardware reports are dated and include forecasts; decisions require current product verification and firm-specific evidence.",
+  "value_opportunity_implication": "Potential value is reduced drafting time after review and a narrower external processing boundary if the entire application path supports it. Compare total employee review and correction time, including missed-action remediation, with the actual approved cloud workflow and manual notes; measure incremental device, licensing, deployment and support costs.",
+  "risk_governance_implication": "Privacy, security and records owners should map audio, transcripts, summaries, caches, telemetry, updates and fallback; test encryption, permissions, deletion, retention, legal hold and device loss controls. Obtain applicable participant notice or consent as advised by counsel. Employees verify commitments, owners and deadlines before distribution; review does not guarantee error-free records.",
+  "recommendation_management_implication": "Prepare a limited, controlled comparative pilot for management consideration before procurement, conditional on identifying a supported end-to-end product and securing security and privacy approval. Agree quality, security and incremental-cost thresholds beforehand. Use representative internal meetings and authorized material against matched cloud and manual baselines; independently audit critical omissions, unsupported action items, speaker attribution, review time, latency, compatibility, NPU use, data flows and total cost. Do not infer a purchase decision from the pilot proposal.",
+  "change_monitoring_triggers": [
+    "Quarterly, IT and privacy leads refresh product support, NPU execution and end-to-end data flows; reassess if compatibility or support changes materially or fallback cannot be controlled.",
+    "Quarterly, review independently tested quality and security against pre-agreed thresholds and measured review time; reassess when a candidate meets all thresholds at acceptable incremental cost, or materially fails a critical-omission or security threshold.",
+    "Quarterly and before procurement, refresh quotes, licenses, support burden and the approved-cloud baseline; reassess on material pricing or policy changes. Consult counsel when relevant jurisdictions or records obligations change.",
+    "At refresh planning and major releases, review independent industry adoption reports, benchmarks and successive forecast revisions; reassess when credible comparable deployments or material regressions emerge."
+  ],
+  "abstention_or_more_information_needed": [
+    "Identify the approved cloud product and configuration, actual fleet and refresh candidates, compatible local applications and execution providers, and supported languages and meeting types.",
+    "Obtain representative quality and security tests, retention and fallback details, applicable policy and jurisdiction requirements, negotiated costs, pilot sample and pre-agreed acceptance thresholds.",
+    "Abstain from concluding that the pilot is economically justified or assigning an industry or application chasm stage until sufficient facts are available."
+  ]
+}
